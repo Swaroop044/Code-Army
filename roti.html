@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<style>
+    #myform {
+        text-align: center;
+        padding: 5px;
+        border: 1px dotted #ccc;
+        margin: 2%;
+    }
+
+    .qty {
+        width: 40px;
+        height: 25px;
+        text-align: center;
+    }
+
+    input.qtyplus {
+        width: 25px;
+        height: 25px;
+    }
+
+    input.qtyminus {
+        width: 25px;
+        height: 25px;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .dim {
+        height: 200px;
+        width: 300px;
+    }
+
+    .col-auto d-none d-lg-block img:hover {
+        transition: width 2s;
+        transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
+
+    h3 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn btn-outline-dark {
+        position: relative;
+        left: 100px;
+        top: 100px;
+    }
+
+    .anc a {
+        text-decoration: none;
+    }
+
+    .text {
+        font-size: 25px;
+    }
+
+    .down {
+        display: flex;
+    }
+
+    .btn {
+        float: right;
+    }
+
+    .block {
+        padding: 15px;
+        margin: 25px;
+    }
+
+    .btn btn-outline-dark anc {
+        margin-left: 100px;
+    }
+</style>
+
+<body>
+    <div class="top">
+        <h3 class="main">Here you go!We have all collections of biryanis from Tasty Beats</h3>
+        <button type="button" class="btn btn-outline-dark anc"><a href="index.html">Back</a></button>
+    </div>
+
+
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+        <div class="col-auto d-none d-lg-block">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2013/07/naan-recipe-2.jpg" class="dim"
+                alt="chicken">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+            <!-- <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong> -->
+            <h3 class="mb-0">Naan</h3>
+            <div class="mb-1 text-body-secondary text">Rs:210</div>
+            <p class="card-text mb-auto">
+                Indulge in aromatic and flavorful chicken biryani, a culinary masterpiece of tender chicken, fragrant
+                basmati
+                rice, and a harmonious blend of spices, sure to tantalize your taste buds.</p>
+            <div class="col-auto d-none d-lg-block down">
+                <!-- <form id='myform' method='POST' class='quantity' action='#'> -->
+                <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                <input type='number' name='quantity' value='0' class='qty' />
+                <input type='button' value='+' class='qtyplus plus' field='quantity' />
+                <!-- </form> -->
+                <button type="button" class="btn btn-outline-primary btn">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+
+        <div class="col-auto d-none d-lg-block">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2010/06/plain-paratha-recipe-1-500x375.jpg"
+                class="dim" alt="mushroom">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Paratha</h3>
+            <div class="mb-1 text-body-secondary text">Rs:180</div>
+            <p class="card-text mb-auto">
+                Savor the earthy and aromatic flavors of Tasty Bits' mushroom biryani, where tender mushrooms are
+                expertly
+                infused with fragrant basmati rice and a medley of spices, creating a vegetarian delight that will leave
+                you
+                craving for more.</p>
+            <div class="col-auto d-none d-lg-block down">
+                <!-- <form id='myform' method='POST' class='quantity' action='#'> -->
+                <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                <input type='text' name='quantity' value='0' class='qty' />
+                <input type='button' value='+' class='qtyplus plus' field='quantity' />
+                <!-- </form> -->
+                <button type="button" class="btn btn-outline-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+      <div class="col-auto d-none d-lg-block">
+          <img src="https://www.whiskaffair.com/wp-content/uploads/2020/08/Tandoori-Roti-2-3.jpg"
+              class="dim" alt="mushroom">
+      </div>
+      <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Tandoori Roti</h3>
+          <div class="mb-1 text-body-secondary text">Rs:180</div>
+          <p class="card-text mb-auto">
+              Savor the earthy and aromatic flavors of Tasty Bits' mushroom biryani, where tender mushrooms are
+              expertly
+              infused with fragrant basmati rice and a medley of spices, creating a vegetarian delight that will leave
+              you
+              craving for more.</p>
+          <div class="col-auto d-none d-lg-block down">
+              <!-- <form id='myform' method='POST' class='quantity' action='#'> -->
+              <input type='button' value='-' class='qtyminus minus' field='quantity' />
+              <input type='text' name='quantity' value='0' class='qty' />
+              <input type='button' value='+' class='qtyplus plus' field='quantity' />
+              <!-- </form> -->
+              <button type="button" class="btn btn-outline-primary">Add to Cart</button>
+          </div>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+        <div class="col-auto d-none d-lg-block">
+            <img src="https://www.whiskaffair.com/wp-content/uploads/2020/08/Tandoori-Roti-2-3.jpg" class="dim"
+                alt="panner">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+
+            <h3 class="mb-0">Tandoori roti</h3>
+            <div class="mb-1 text-body-secondary text">Rs:180</div>
+            <p class="card-text mb-auto">
+                Savor the earthy and aromatic flavors of Tasty Bits' mushroom biryani, where tender mushrooms are
+                expertly
+                infused with fragrant basmati rice and a medley of spices, creating a vegetarian delight that will leave
+                you
+                craving for more.</p>
+            <div class="col-auto d-none d-lg-block down">
+                <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                <input type='text' name='quantity' value='0' class='qty' />
+                <input type='button' value='+' class='qtyplus plus' field='quantity' />
+            </div>
+            <button type="button" class="btn btn-outline-primary" onclick="display()">Add to Cart</button>
+        </div>
+
+    </div> -->
+
+    
+
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+      <div class="col-auto d-none d-lg-block">
+          <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2016/01/missi-roti-recipe-2-1.jpg"
+              class="dim" alt="mushroom">
+      </div>
+      <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Missi Roti</h3>
+          <div class="mb-1 text-body-secondary text">Rs:180</div>
+          <p class="card-text mb-auto">
+              Savor the earthy and aromatic flavors of Tasty Bits' mushroom biryani, where tender mushrooms are
+              expertly
+              infused with fragrant basmati rice and a medley of spices, creating a vegetarian delight that will leave
+              you
+              craving for more.</p>
+          <div class="col-auto d-none d-lg-block down">
+              <!-- <form id='myform' method='POST' class='quantity' action='#'> -->
+              <input type='button' value='-' class='qtyminus minus' field='quantity' />
+              <input type='text' name='quantity' value='0' class='qty' />
+              <input type='button' value='+' class='qtyplus plus' field='quantity' />
+              <!-- </form> -->
+              <button type="button" class="btn btn-outline-primary">Add to Cart</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+      <div class="col-auto d-none d-lg-block">
+          <img src="https://static.toiimg.com/thumb/56097918.cms?width=1200&height=900"
+              class="dim" alt="mushroom">
+      </div>
+      <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Makki ki Roti</h3>
+          <div class="mb-1 text-body-secondary text">Rs:180</div>
+          <p class="card-text mb-auto">
+              Savor the earthy and aromatic flavors of Tasty Bits' mushroom biryani, where tender mushrooms are
+              expertly
+              infused with fragrant basmati rice and a medley of spices, creating a vegetarian delight that will leave
+              you
+              craving for more.</p>
+          <div class="col-auto d-none d-lg-block down">
+              <!-- <form id='myform' method='POST' class='quantity' action='#'> -->
+              <input type='button' value='-' class='qtyminus minus' field='quantity' />
+              <input type='text' name='quantity' value='0' class='qty' />
+              <input type='button' value='+' class='qtyplus plus' field='quantity' />
+              <!-- </form> -->
+              <button type="button" class="btn btn-outline-primary">Add to Cart</button>
+          </div>
+      </div>
+    </div>
+
+
+
+    
+
+
+
+
+    <!-- <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+        <div class="col-auto d-none d-lg-block">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2016/01/missi-roti-recipe-2-1.jpg" alt="egg"
+                class="dim">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Missi roti</h3>
+            <div class="col-auto d-none d-lg-block down">
+                <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                <input type='text' name='quantity' value='0' class='qty' />
+                <input type='button' value='+' class='qtyplus plus' field='quantity' />
+            </div>
+            <button type="button" class="btn btn-outline-primary">Add to Cart</button>
+        </div>
+    </div> -->
+
+
+
+    <!-- <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+        <div class="col-auto d-none d-lg-block">
+            <img src="https://static.toiimg.com/thumb/56097918.cms?width=1200&height=900" alt="spldum" class="dim">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Makki ki roti</h3>
+            <div class="col-auto d-none d-lg-block down">
+                <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                <input type='text' name='quantity' value='0' class='qty' />
+                <input type='button' value='+' class='qtyplus plus' field='quantity' />
+            </div>
+            <button type="button" class="btn btn-outline-primary">Add to Cart</button>
+        </div>
+    </div> -->
+
+
+
+
+    <!-- <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+        <div class="col-auto d-none d-lg-block">
+            <img src="https://t2p.fra1.digitaloceanspaces.com/1657885214661oloe3.png" alt="royal" class="dim">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+            <div class="col-auto d-none d-lg-block down">
+                <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                <input type='text' name='quantity' value='0' class='qty' />
+                <input type='button' value='+' class='qtyplus plus' field='quantity' />
+            </div>
+            <button type="button" class="btn btn-outline-primary">Add to Cart</button>
+        </div>
+    </div> -->
+
+
+    <script>
+        const minusButton = document.querySelector('.qtyminus');
+        const plusButton = document.querySelector('.qtyplus');
+        const quantityInput = document.querySelector('.qty');
+
+        minusButton.addEventListener('click', function () {
+            let quantity = parseInt(quantityInput.value);
+
+            if (quantity > 0) {
+                quantity -= 1;
+                quantityInput.value = quantity;
+            }
+        });
+
+        plusButton.addEventListener('click', function () {
+            let quantity = parseInt(quantityInput.value);
+            quantity += 1;
+            quantityInput.value = quantity;
+        });
+        function display() {
+            alert("Your item has been added")
+        }
+    </script>
+</body>
+
+</html>

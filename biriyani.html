@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<style>
+  #myform {
+    text-align: center;
+    padding: 5px;
+    border: 1px dotted #ccc;
+    margin: 2%;
+  }
+
+  .qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+  }
+
+  input.qtyplus {
+    width: 25px;
+    height: 25px;
+  }
+
+  input.qtyminus {
+    width: 25px;
+    height: 25px;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .dim {
+    height: 200px;
+    width: 300px;
+  }
+
+  .dim:hover {
+    transition: width 1s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  }
+
+  .vnv{
+    display: flex;
+    flex-direction: row;
+  }
+  h3 {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn btn-outline-dark {
+    position: relative;
+    left: 100px;
+    top: 100px;
+  }
+
+  .anc a {
+    text-decoration: none;
+  }
+
+  .text {
+    font-size: 25px;
+  }
+
+  .down {
+    display: flex;
+  }
+
+  .btn {
+    float: right;
+  }
+
+  .block {
+    padding: 15px;
+    margin: 25px;
+  }
+
+  .flex {
+    display: flex;
+  }
+</style>
+
+<body>
+  <div class="top container">
+    <h3 class="main">Here you go!We have all collections of biryanis from Tasty Beats</h3>
+    <button type="button" class="btn btn-outline-dark anc"><a href="index.html">Back</a></button>
+  </div>
+
+  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+    <div class="col-auto d-none d-lg-block">
+      <img src="https://s4.scoopwhoop.com/anj/sw/5312bf12-5ba7-444f-b13e-b7fc0b6aabfb.jpg" class="dim" alt="chicken">
+    </div>
+    <div class="col p-4 d-flex flex-column position-static flex">
+      <!-- <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong> -->
+      <div class="vnv">
+        <h3 class="mb-0">Chicken Biryani</h3>
+        <img src="https://img.icons8.com/?size=512&id=zz4M4H8yATCp&format=png" style="height: 35px; width: 35px;"
+          alt="nonveg">
+      </div>
+      <div class="mb-1 text-body-secondary text">Rs:210</div>
+      <p class="card-text mb-auto">
+        Indulge in aromatic and flavorful chicken biryani, a culinary masterpiece of tender chicken, fragrant basmati
+        rice, and a harmonious blend of spices, sure to tantalize your taste buds.</p>
+      <div class="col-auto d-none d-lg-block down">
+        <!-- <form id='myform' method='POST' class='quantity' action='#'> -->
+        <input type='button' value='-' class='qtyminus minus' field='quantity' />
+        <input type='number' name='quantity' value='0' class='qty' />
+        <input type='button' value='+' class='qtyplus plus' field='quantity' />
+        <!-- </form> -->
+        <button type="button" class="btn btn-outline-primary btn" onclick="addToCart('Chicken Biryani', 210)">Add to
+          Cart</button>
+
+        <!-- <button type="button" class="btn btn-outline-primary btn" onclick="display()">Add to Cart</button> -->
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+    <div class="col-auto d-none d-lg-block">
+      <img src="https://cookingfromheart.com/wp-content/uploads/2017/05/Chettinad-Mushroom-Biryani-4.jpg" class="dim"
+        alt="mushroom">
+    </div>
+    <div class="col p-4 d-flex flex-column position-static">
+      <div class="vnv">
+        <h3 class="mb-0">Mushroom Biryani</h3>
+        <img src="https://th.bing.com/th/id/OIP.ziAJTKtxn2RmrsjYIBylswHaHW?pid=ImgDet&rs=1" style="height: 35px; width: 35px;"
+          alt="nonveg">
+      </div>
+
+      <div class="mb-1 text-body-secondary text">Rs:180</div>
+      <p class="card-text mb-auto">
+        Savor the earthy and aromatic flavors of Tasty Bits' mushroom biryani, where tender mushrooms are expertly
+        infused with fragrant basmati rice and a medley of spices, creating a vegetarian delight that will leave you
+        craving for more.</p>
+      <div class="col-auto d-none d-lg-block down">
+        <input type='button' value='-' class='qtyminus minus' field='quantity' />
+        <input type='number' name='quantity' value='0' class='qty' />
+        <input type='button' value='+' class='qtyplus plus' field='quantity' />
+        <button type="button" class="btn btn-outline-primary" onclick="addToCart('Mushroom biryani', 180)">Add to
+          Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+    <div class="col-auto d-none d-lg-block">
+      <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/02/paneer-biryani-recipe.jpg" class="dim"
+        alt="panner">
+    </div>
+    <div class="col p-4 d-flex flex-column position-static">
+      <div class="vnv">
+        <h3 class="mb-0">Panner Biryani</h3>
+        <img src="https://th.bing.com/th/id/OIP.ziAJTKtxn2RmrsjYIBylswHaHW?pid=ImgDet&rs=1" style="height: 35px; width: 35px;"
+          alt="nonveg">
+      </div>
+      <div class="mb-1 text-body-secondary text">Rs:200</div>
+      <p class="card-text mb-auto">
+        Relish Tasty Bits' delectable paneer biryani, where succulent cubes of paneer are delicately cooked with
+        fragrant basmati rice, aromatic spices, and a symphony of flavors, delivering a vegetarian biryani experience
+        that is simply irresistible.</p>
+      <div class="col-auto d-none d-lg-block">
+        <input type='button' value='-' class='qtyminus minus' field='quantity' />
+        <input type='text' name='quantity' value='0' class='qty' />
+        <input type='button' value='+' class='qtyplus plus' field='quantity' />
+        <button type="button" class="btn btn-outline-primary" onclick="addToCart('Panner Biryani', 200)">Add to
+          Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+    <div class="col-auto d-none d-lg-block">
+      <img src="https://static.toiimg.com/thumb/52397749.cms?imgsize=299414&width=800&height=800" alt="egg" class="dim">
+    </div>
+    <div class="col p-4 d-flex flex-column position-static">
+      <div class="vnv">
+        <h3 class="mb-0">Egg Biryani</h3>
+        <img src="https://img.icons8.com/?size=512&id=zz4M4H8yATCp&format=png" style="height: 35px; width: 35px;"
+          alt="nonveg">
+      </div>
+      <div class="mb-1 text-body-secondary text">Rs:170</div>
+      <p class="card-text mb-auto">
+        Experience the delightful fusion of flavors in Tasty Bits' egg biryani, where perfectly boiled eggs are
+        nestled within fragrant basmati rice, infused with aromatic spices, creating a tantalizing and
+        protein-packed biryani that will leave you satisfied and craving for more.</p>
+      <div class="col-auto d-none d-lg-block">
+        <input type='button' value='-' class='qtyminus minus' field='quantity' />
+        <input type='text' name='quantity' value='0' class='qty' />
+        <input type='button' value='+' class='qtyplus plus' field='quantity' />
+        <button type="button" class="btn btn-outline-primary" onclick="addToCart('Egg Biryani', 170)">Add to
+          Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+    <div class="col-auto d-none d-lg-block">
+      <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Jyothi_Rajesh/Chicken_Biryani_400.jpg"
+        alt="spldum" class="dim">
+    </div>
+    <div class="col p-4 d-flex flex-column position-static">
+      <div class="vnv">
+        <h3 class="mb-0">Spl Chicken Dum Biryani</h3>
+        <img src="https://img.icons8.com/?size=512&id=zz4M4H8yATCp&format=png" style="height: 35px; width: 35px;"
+          alt="nonveg">
+      </div>
+      <div class="mb-1 text-body-secondary text">Rs:230</div>
+      <p class="card-text mb-auto">
+        Indulge in the irresistible spl chicken dum biryani at Tasty Bits, where succulent pieces of chicken are
+        slow-cooked to perfection with fragrant basmati rice, aromatic spices, and a secret blend of flavors,
+        resulting in a biryani masterpiece that will transport your taste buds to culinary heaven.</p>
+      <div class="col-auto d-none d-lg-block">
+        <!-- <form id='myform' method='POST' class='quantity' action='#'> -->
+        <input type='button' value='-' class='qtyminus minus' field='quantity' />
+        <input type='text' name='quantity' value='0' class='qty' />
+        <input type='button' value='+' class='qtyplus plus' field='quantity' />
+        <!-- </form> -->
+        <button type="button" class="btn btn-outline-primary" onclick="addToCart('Spl Chicken Dum Biryani', 230)">Add to
+          Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative block">
+    <div class="col-auto d-none d-lg-block">
+      <img src="https://t2p.fra1.digitaloceanspaces.com/1657885214661oloe3.png" alt="royal" class="dim">
+    </div>
+    <div class="col p-4 d-flex flex-column position-static">
+      <div class="vnv">
+        <h3 class="mb-0">Royal Chicken Biryani</h3>
+        <img src="https://img.icons8.com/?size=512&id=zz4M4H8yATCp&format=png" style="height: 35px; width: 35px;"
+          alt="nonveg">
+      </div>
+      <div class="mb-1 text-body-secondary text">Rs:210</div>
+      <p class="card-text mb-auto">
+        Experience the regal flavors of Tasty Bits' royal chicken biryani, where tender and succulent chicken is
+        marinated in a secret blend of spices, layered with fragrant basmati rice, and slow-cooked to perfection,
+        creating a majestic biryani fit for kings and queens, guaranteed to leave you feeling like royalty.</p>
+      <div class="col-auto d-none d-lg-block">
+        <!-- <form id='myform' method='POST' class='quantity' action='#'> -->
+        <input type='button' value='-' class='qtyminus minus' field='quantity' />
+        <input type='text' name='quantity' value='0' class='qty' />
+        <input type='button' value='+' class='qtyplus plus' field='quantity' />
+        <!-- </form> -->
+        <button type="button" class="btn btn-outline-primary" onclick="addToCart('Royal Chicken Biryani', 210)">Add to
+          Cart</button>
+      </div>
+    </div>
+    <div id="cart-items"></div>
+    <script>
+
+      let cartItems = [];
+
+      function addToCart(itemName, price) {
+        const quantity = parseInt(document.querySelector('.qty').value);
+        const totalPrice = quantity * price;
+
+        const item = {
+          name: itemName,
+          price: price,
+          quantity: quantity,
+          total: totalPrice
+        };
+
+        cartItems.push(item);
+
+        updateCart();
+        // displayAlert();
+      }
+
+      function updateCart() {
+        const cartItemsContainer = document.getElementById('cart-items');
+        cartItemsContainer.innerHTML = '';
+
+        cartItems.forEach(item => {
+          const itemElement = document.createElement('div');
+          itemElement.innerHTML = `
+        <p><strong>${item.name}</strong> - Quantity: ${item.quantity} - Price: Rs.${item.price} - Total: Rs.${item.total}</p>
+      `;
+          cartItemsContainer.appendChild(itemElement);
+        });
+      }
+
+      function displayAlert() {
+        alert('Your item has been added to the cart.');
+      }
+
+      const minusButton = document.querySelector('.qtyminus');
+      const plusButton = document.querySelector('.qtyplus');
+      const quantityInput = document.querySelector('.qty');
+
+      minusButton.addEventListener('click', function () {
+        let quantity = parseInt(quantityInput.value);
+
+        if (quantity > 0) {
+          quantity -= 1;
+          quantityInput.value = quantity;
+        }
+      });
+
+      plusButton.addEventListener('click', function () {
+        let quantity = parseInt(quantityInput.value);
+        quantity += 1;
+        quantityInput.value = quantity;
+      });
+      function display() {
+        alert("Your item has been added")
+      }
+
+    </script>
+</body>
+
+</html>
